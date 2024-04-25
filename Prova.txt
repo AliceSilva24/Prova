@@ -8,6 +8,7 @@ ifrs osorio
 int main() {
 
 printf("RELOGIO"); 
+printf ("TESTANTO COMMIT NO MASTER");
 
     while (1) {
         // Obter a hora atual
