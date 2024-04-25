@@ -1,1 +1,28 @@
 ifrs osorio
+
+#include <stdio.h>
+#include <time.h>
+#include <unistd.h>
+
+int main() {
+    while (1) {
+        // Obter a hora atual
+        time_t rawtime;
+        struct tm *timeinfo;
+        time(&rawtime);
+        timeinfo = localtime(&rawtime);
+
+        // Imprimir a hora formatada
+        printf("Hora atual: %02d:%02d:%02d\n", 
+               timeinfo->tm_hour, timeinfo->tm_min, timeinfo->tm_sec);
+
+        // Aguardar um segundo antes de atualizar novamente
+        sleep(1);
+
+        // Limpar o terminal (funciona em sistemas Unix-like)
+        printf("\033[H\033[J");
+    }
+
+    return 0;
+}
+
