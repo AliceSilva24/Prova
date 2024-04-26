@@ -1,10 +1,16 @@
 ifrs osorio
 
+
+
 #include <stdio.h>
 #include <time.h>
 #include <unistd.h>
 
 int main() {
+
+printf("RELOGIO"); 
+printf ("TESTANTO COMMIT NO MASTER");
+
     while (1) {
         // Obter a hora atual
         time_t rawtime;
@@ -23,8 +29,6 @@ int main() {
         printf("\033[H\033[J");
     }
 
-
-
 printf("atualizar relogio");
 printf("atualizar relogio2");
 printf("atualizar relogio3");
@@ -36,4 +40,3 @@ printf("atualizar relogio7");
     
     return 0;
 }
-
