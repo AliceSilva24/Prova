@@ -23,6 +23,17 @@ int main() {
         printf("\033[H\033[J");
     }
 
+
+
+printf("atualizar relogio");
+printf("atualizar relogio2");
+printf("atualizar relogio3");
+printf("atualizar relogio4");
+printf("atualizar relogio5");
+printf("atualizar relogio6");
+printf("atualizar relogio7");
+
+    
     return 0;
 }
 
